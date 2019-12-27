@@ -1,0 +1,41 @@
+
+    {{> nav}}
+
+    <div class="chatRoom">
+        <div class="userList">
+            <!-- this is for one person, use for each to generate all -->
+            {{#each result}}
+            <a href ="/message/chat?chatId={{this.chat_id}}" class="messageLink">
+            {{#if (equals this.chat_id ../selected)}}
+            <div class="user selected">
+            {{else}}
+            <div class="user">
+            {{/if}}
+                <table>
+                    <tr>
+                        <td>
+                            <img src="{{this.img_url}}" class="userPic" alt="profile picture" onerror="this.src='/img/default.png'">
+                        </td>
+                        <td>
+                            <span id="username-bold">{{this.firstname}} {{this.lastname}}</span> <span class="displayMonthDay">{{this.date}}</span>
+                            <p>{{this.subject}}</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            </a>
+            {{else}}
+                            <table>
+                    <tr>
+                        <td>
+                            <img src="/img/empty.png" class="userPic" alt="empty inbox">
+                        </td>
+                        <td>
+                            <span>No messages yet!</span>
+                        </td>
+                    </tr>
+                </table>
+            {{/each}}
+        </div>
+        {{> displaymessages messages=messages chatId=selected}}
+    </div>

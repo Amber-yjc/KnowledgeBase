@@ -1,0 +1,20 @@
+    {{> nav}}
+
+    <div class="messageDiv">
+        <table>
+            <tr>
+                <td>
+                    <img id="receiverImg" src="./img/vector-knowledge.jpg" alt="profile picture">
+                </td>
+                <td>
+                    <form action="/message/create" method="POST" id="messageForm">
+                        <input type="hidden" name="to" value="{{to}}" />
+                        <input class="oneLineInput" type="text" name="subject" placeholder="subject" required /> <br />
+                        <textarea form="messageForm" rows="10" type="text" name="text"
+                            placeholder="message detail..." required></textarea><br />
+                        <button type="submit" value="message">Message</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>

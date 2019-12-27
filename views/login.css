@@ -1,0 +1,555 @@
+/***************************************** 
+Colors:
+rgb(77, 158, 235);          light blue 
+rgb(226, 223, 223);         chat room gray
+***************************************/
+
+/* *****************************************general*********************** */
+
+.sideBySideDivContainer{
+    width: 100%; 
+    
+}
+
+.leftDiv{
+    width: 40%; 
+    float: left;
+    
+}
+
+.rightDiv{
+    margin-left: 45%;
+    padding-top: 5%;
+}
+
+input{
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.submitBtn{    
+    background-color: rgb(77, 158, 235);
+    border-color:  rgb(77, 158, 235);
+    border: none;
+    color: white;
+    padding: 6px 32px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.blueFont{
+    color: rgb(77, 158, 235);
+}
+.grayFont{
+    color:rgb(226, 223, 223);  
+}
+
+/* *************************************login page************************************ */
+img{
+    width: 100%;
+    height: auto;
+}
+
+.postDiv{
+    width: 80%;
+    text-align: left;
+}
+.sideBySideInput{
+    width: 40%;
+    padding: 10px 5px;
+}
+.oneLineInput{
+    width: 84%;
+    padding: 10px 5px;
+}
+
+.signupBtn{    
+    background-color: rgb(77, 158, 235);
+    border-color:  rgb(77, 158, 235);
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    width: 87%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.homeP{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* *****************************************registration ***************************/
+#aboutInput{
+    line-height: 1.33;
+}
+textarea#registrationTextArea{
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 84.5%;
+    
+}
+
+/******************************************* homepage***************************** */
+/* nav */
+.navBar{
+    font-size: 50px;
+    font-weight: bold;
+    position: relative; 
+    width: 100%;
+    height: 5%;
+    padding-left: 5px;
+}
+#searchInput{
+    position: absolute;
+    left: 10%;
+    top: 10px;
+    height: 35%;
+    width: 30%;    
+}
+#logoutBtn{
+    position: absolute;
+    right: 0;
+    top: 10px; 
+    height: 35px;
+    width: 10%;
+    text-align: left;
+    padding: 5px 5px 5px 10px;
+    background-color: rgb(77, 158, 235);
+    color: white;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+
+}
+/* left profile panel */
+
+
+
+.leftDivProfile{
+    width: 30%;
+    position: fixed;      
+    padding-top: 3%; 
+    float: left;
+    text-align: center;
+    /* background-color: honeydew; */
+
+}
+
+.rightDivProfile{
+    margin-left: 35%;   
+    /* background-color: indianred; */
+    
+
+}
+
+.profilePic{
+    border-radius: 50%;
+    width: 128px;
+    height: 128px;
+    margin-top: 10%;
+}
+
+#PostMessageLikeTable{
+    border-collapse: collapse;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 10px;
+}
+
+table#PostMessageLikeTable tr td {
+    margin: 10px;
+    padding: 5px 30px;
+}
+
+/* right side */
+#postToTimeLine{
+    width: 50%;
+    /* background-color: indigo; */
+}
+
+div#postToTimeLine textarea{
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 84.5%;
+
+}
+
+div#postToTimeLine button{
+    padding: 5px;
+    color: rgb(77, 158, 235);
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid rgb(77, 158, 235);;
+    font-weight: bold;
+    width: 40%;
+
+}
+
+div#postToTimeLine select{
+    padding: 5px;
+    color: rgb(77, 158, 235);
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid rgb(77, 158, 235);;
+    font-weight: bold;
+    width: 50%;
+}
+
+/* search topic bar */
+div#searchByTopic{
+    width:55%;
+    margin-top: 20px;
+    /* background-color: khaki; */
+}
+
+div#searchByTopic span{
+    padding: 5px 10px 5px 0px;
+    width:auto;
+
+}
+
+div#searchByTopic select{
+    padding: 5px;
+    color: rgb(77, 158, 235);
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid rgb(77, 158, 235);;
+    font-weight: bold;
+    width: 40%;
+
+}
+
+div#searchByTopic button{
+    padding: 5px;
+    background-color: rgb(77, 158, 235);
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgb(77, 158, 235);;
+    font-weight: bold;
+    width:25%;
+
+}
+
+/* lastest discussions */
+div#latestDicussions{
+    margin-top: 5%;
+    width: 80%;
+    /* background-color: lawngreen; */
+    
+}
+div.post{
+    width:100%;
+    position: relative;
+    /* background-color: lightblue; */
+    margin-bottom: 20px;
+}
+div.post table{
+    border-collapse: collapse;
+    /* border-spacing: 10px; */
+}
+
+div.post table tr td{
+    margin: 10px;
+    padding: 5px 30px;
+}
+div.post table tr td span:nth-child(2){
+    position: absolute;
+    top: 5px;
+    padding: 2px 10px;
+    right: 5px;
+    color: rgb(77, 158, 235);
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid rgb(77, 158, 235);;
+}
+
+div.post table tr td a{
+    position: absolute;
+    bottom: 15px;
+    right: 55px;
+}
+div.post table tr td p, span#postDate{
+    margin-left: 20px;
+}
+
+div.rightDivProfile >  a{
+    float: right;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    padding: 5px 5px 5px 10px;
+    color: rgb(77, 158, 235);
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid rgb(77, 158, 235);;
+    font-weight: bold;
+
+}
+
+/******************************* replies.html******************************************** */
+
+.mainPost{
+    width: 60%;
+    /* background-color: lightcoral; */
+    margin-left: 20%;
+    margin-right: auto;
+}
+
+.replyPost{
+    width:60%;
+    margin-left: 30%;
+    margin-right: auto;
+    /* background-color: lightgreen; */
+}
+
+.replyPost textarea{
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: auto;
+}
+
+.replyPost button{
+    padding: 5px 5px 5px 10px;
+    background-color: rgb(77, 158, 235);
+    color: white;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    margin-left: 87%;
+}
+
+.replyPost img{
+    width: 80px;
+    height: auto;
+}
+
+/*************************************** profile *******************************/
+.profileDiv{
+    padding: 5%;
+    width: 90%;
+    height: 100%;
+    /* background-color: deeppink; */
+}
+
+
+div.profileTop img{
+    border-radius: 50%;
+    width:40%;
+    height: auto;
+}
+
+div.profileTop td:nth-child(1){
+    /* background-color: lightgreen; */
+    width: 40%;
+}
+
+div.profileTop td:nth-child(2){
+    /* background-color: darkorchid; */
+    width: 30%;
+    position: relative;
+}
+
+#messageBtn{
+    position: absolute;
+    left: 5px;
+    bottom: 5px;     
+    padding: 10px;
+    font-size: large;
+    background-color: rgb(77, 158, 235);
+    color: white;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+
+}
+
+
+
+
+.likesPost{
+    font-size: large;
+    font-weight: bold;
+    left: 20px;
+    top: 20px;  
+    position: absolute;
+    /* background-color: hotpink; */
+    padding: 5px;
+}
+
+
+#likeBtn{
+    border-radius: 50%;   
+    padding: 5px;
+    font-size: medium;
+    font-weight: bold;    
+    width: 30px;
+    height: 30px;
+    background-color: rgb(77, 158, 235);
+    color: white;
+    text-decoration: none;
+    border: none;
+
+}
+
+/*************************************** message ************************************/
+.messageDiv{
+    padding: 5%;
+    width: 90%;
+    height: 100%;
+    /* background-color: deeppink; */
+}
+.messageDiv table{
+    width: 80%;
+}
+.messageDiv input{
+    width: 60%;
+}
+.messageDiv textarea{
+    width: 80%;
+}
+
+.messageDiv td:nth-child(1){
+    /* background-color: hotpink; */
+    width: 20%;
+    position: relative;
+}
+.messageDiv td:nth-child(2){
+    /* background-color: firebrick; */
+    padding-left: 2%;
+}
+
+.messageDiv button{
+    font-size: large;
+    background-color: rgb(77, 158, 235);
+    color: white;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    padding: 10px 70px 10px 10px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+#receiverImg{
+    border-radius: 50%;
+    width:100%;
+    height: auto;
+    position: absolute;
+    top:0;
+
+}
+
+/***************************************** chat ********************************/
+.chatRoom{
+    width:100%;
+    height: 100%;
+    /* background-color: firebrick; */
+    
+}
+
+/* left-side */
+
+.userList{
+    width: 30%;
+    height: 100vh;
+    /* background-color: forestgreen; */
+    overflow-y: auto;
+    border-right: 1px solid rgb(226, 223, 223);
+    float: left;
+
+}
+.userList::-webkit-scrollbar{
+    display: none;
+}
+.userList table{
+    width: 100%;
+    height: auto;
+    padding-bottom: 5%;
+    border-bottom: 1px solid rgb(226, 223, 223);
+
+}
+.userList td:nth-child(1){
+    /* background-color: hotpink; */
+    width: 30%;
+}
+.userList td:nth-child(2){
+    /* background-color: firebrick; */
+    padding-left: 3%;
+    width:100%;
+
+    position: relative;
+
+}
+
+.userList span:nth-child(2){
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.userPic{
+    border-radius: 50%;
+    width:100%;
+    height: auto;
+    /* position: absolute;
+    top:0; */
+}
+.user{
+    padding: 2%;
+}
+
+
+/* right-side */
+.convoList{
+    margin-left: 30%;
+    height: 100vh;
+    /* background-color: forestgreen; */
+    overflow-y: auto;
+
+}
+
+
+.convoList::-webkit-scrollbar{
+    display: none;
+}
+.convoList table{
+    width: 100%;
+    height: auto;
+}
+.convoList td:nth-child(1){
+    /* background-color: hotpink; */
+    width: 10%;
+}
+.convoList td:nth-child(2){
+    /* background-color: firebrick; */
+    padding-left: 3%;
+    width:100%;
+
+
+}
+
+/* date separator */
+
+.dateSeparator{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color:  rgb(199, 196, 196);
+}
+
+.dateSeparator::before, .dateSeparator::after{
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid rgb(199, 196, 196);
+
+}
+
+.dateSeparator::before{
+    margin-right: .25em;
+}
+.dateSeparator::after{
+    margin-left: .25em;
+}
+
+

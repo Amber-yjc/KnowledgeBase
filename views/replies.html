@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href='login.css' rel='stylesheet' />
+
+</head>
+
+<body>
+
+    <div class="navBar">
+        <span>k<span class="blueFont">b</span></span>
+        <input type="text" id="searchInput" placeholder="&#x1F50D;Search..">
+        <button type="button" id="logoutBtn" onclick="">logout</button>
+    </div>
+
+    <!-- main post -->
+    <div class="mainPost">
+        <div class="post">
+            <table>
+                <tr>
+                    <td>
+                        <img src="./img/vector-knowledge.jpg" class="profilePic" alt="profile picture">
+                    </td>
+                    <td>
+                        <span>User settings deleted</span> <span>nodejs</span>
+                        <p>After I logged into my node app, I saw that the settings were deleted after I restarted
+                            my server. I had installed nodemon the it stared...</p>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <!-- replies -->
+    <div class="replyPost">
+        <!-- for each reply, div class="post" = -->
+        <div class="post">
+            <table>
+                <tr>
+                    <td>
+                        <img src="./img/vector-knowledge.jpg" class="profilePic" alt="profile picture">
+                    </td>
+                    <td>
+                        <p>After I logged into my node app, I saw that the settings were deleted after I restarted
+                            my server. I had installed nodemon the it stared...</p>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="post">
+            <table>
+                <tr>
+                    <td>
+                        <img src="./img/vector-knowledge.jpg" class="profilePic" alt="profile picture">
+                    </td>
+                    <td>
+                        <p>After I logged into my node app, I saw that the settings were deleted after I restarted
+                            my server. I had installed nodemon the it stared..hhhhhh
+                            hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh.</p>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- end of for each reply -->
+        <form action="" method="POST" id="replyForm">
+            <textarea form="replyForm" rows="3" type="text" name="reply"
+                placeholder="add your reply..."></textarea><br />
+
+            <button type="submit" value="addReply">comment</button>
+        </form>
+
+
+    </div>
+</body>
+
+</html>

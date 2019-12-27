@@ -1,0 +1,74 @@
+/***************************************** 
+Colors:
+rgb(77, 158, 235);          light blue 
+rgb(226, 223, 223);         chat room gray
+***************************************/
+
+/* *************************************login page************************************ */
+img{
+    width: 100%;
+    height: auto;
+}
+
+.postDiv{
+    width: 80%;
+    text-align: left;
+}
+.sideBySideInput{
+    width: 40%;
+    padding: 10px 5px;
+}
+.oneLineInput{
+    width: 84%;
+    padding: 10px 5px;
+}
+
+.signupBtn{    
+    background-color: rgb(77, 158, 235);
+    border-color:  rgb(77, 158, 235);
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    width: 87%;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.signupBtn[disabled]{    
+    background-color: rgb(150, 178, 255);
+    border-color:  rgb(150, 178, 255);
+    border: none;
+    color: grey;
+    padding: 10px 32px;
+    width: 87%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.homeP{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* *****************************************registration ***************************/
+#aboutInput{
+    line-height: 1.33;
+}
+textarea#registrationTextArea{
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 84.5%;
+    
+}
+
+#intro-text2{
+    margin-left: 10%;
+    font-weight: 1200;
+}
+
+/* login */
+
+p.error-msg {
+    color: red;
+}

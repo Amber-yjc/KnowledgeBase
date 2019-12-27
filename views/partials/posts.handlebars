@@ -1,0 +1,32 @@
+{{#each posts}}
+<div class="post" post_id={{this.post_id}}>
+    <table>
+        <tr>
+            <td>
+                <a href="/user/profile?userid={{id}}">
+                    <img src="{{this.avatar_url}}" class="profilePic" alt="profile picture" onerror="this.src='/img/default.png'">
+                </a>
+            </td>
+            <td>
+                <span id="subject-text">{{this.subject}}</span> <span class="non-click">{{this.topic}}</span>
+                <p>{{this.text}}</p>
+                <span id="postDate" class="displayDate">{{this.date}}</span>
+                <a class="replies_btn replyHref" href="/post/replies?post_id={{this.post_id}}" >{{this.reply_count}} replies</a>
+            </td>
+        </tr>
+    </table>
+</div>
+{{else}}
+<div class="post">
+    <table>
+        <tr>
+            <td>
+                <img src="/img/empty.png" class="userPic" alt="empty posts">
+            </td>
+            <td>
+                <span>No posts yet!</span>
+            </td>
+        </tr>
+    </table>
+</div>
+{{/each}}

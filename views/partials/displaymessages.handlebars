@@ -1,0 +1,55 @@
+        <div class="convoList">
+            <div class="convoMessages" id="convoMessages">
+            <!-- this is one chat, use in for each date -->
+            {{#each messages}}
+                <div class="dateSeparator displayMonthDayUpper">{{@key}}</div>
+                {{#each this}}
+                    <div class="chat">
+                        <!-- for each chatbox for this date -->
+                        <div class="user">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src={{this.img_url}} class="userPic" alt="profile picture" onerror="this.src='/img/default.png'">
+                                    </td>
+                                    <td>
+                                        <span id="username-bold">{{this.firstname}} {{this.lastname}}</span> <span class="grayFont"> &#8226 <span class="displayTime">{{this.date}}</span></span>
+                                        <p>{{this.text}}</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                </div>
+            {{/each}}
+        {{else}}
+                    <div class="chat">
+                        <!-- for each chatbox for this date -->
+                        <div class="user">
+                            <table>
+                                <tr>
+                                    <td>
+                                    <img src="/img/empty.png" class="userPic" alt="empty inbox">
+                                    </td>
+                                    <td>
+                                        <span>No messages yet!</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                </div>
+        {{/each}}
+        </div>
+        {{#if (notEmpty messages)}}
+            <div id="messageInput">
+            <input type="hidden" name="chatId" id="chatId" value={{chatId}} />
+            <textarea class="fill-width" name="text" rows="6" placeholder="Write a message..." id="messagetext"></textarea>
+            <div class="fill-width submit-bar">
+                <button onclick="sendMessage()" class="submit-message-button">Send</button>
+            </div>
+        </div>
+      {{/if}}
+   </div>
+    </div>
+
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src='/js/chat.js'></script>

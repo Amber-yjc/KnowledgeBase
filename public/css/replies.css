@@ -1,0 +1,38 @@
+/******************************* replies.html******************************************** */
+
+.mainPost{
+    width: 60%;
+    /* background-color: lightcoral; */
+    margin-left: 20%;
+    margin-right: auto;
+}
+
+.replyPost{
+    width:60%;
+    margin-left: 30%;
+    margin-right: auto;
+    /* background-color: lightgreen; */
+}
+
+.replyPost textarea{
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: auto;
+}
+
+.replyPost button{
+    padding: 5px 5px 5px 10px;
+    background-color: rgb(77, 158, 235);
+    color: white;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    margin-left: 87%;
+}
+
+.replyPost img{
+    width: 80px;
+    height: 80px;
+}

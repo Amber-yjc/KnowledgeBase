@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href='login.css' rel='stylesheet' />
+
+</head>
+
+<body>
+    <div class="navBar">
+        <span>k<span class="blueFont">b</span></span>
+        <input type="text" id="searchInput" placeholder="&#x1F50D;Search..">
+        <button type="button" id="logoutBtn" onclick="">logout</button>
+    </div>
+
+    <div class="leftDivProfile">
+        <img src="./img/vector-knowledge.jpg" class="profilePic" alt="profile picture">
+        <h1>Sean WilliamSon</h1>
+        <p>10 years of experience working in tech</p>
+        <table id="PostMessageLikeTable">
+            <tr>
+                <td><a href="">Posts</a></td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td><a href="">Messages</a></td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Likes</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">Edit Profile</a>
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="rightDivProfile">
+        <div id="postToTimeLine">
+            <h1>What is your question today?</h1>
+            <form action="" method="POST" id="homePageForm">
+                <input class="oneLineInput" type="text" name="subject" placeholder="subject" /> <br />
+                <textarea form="homePageForm" rows="5" type="text" name="detail"
+                    placeholder="explain in detail..."></textarea><br />
+                <select name="topic">
+                    <option value="" selected disabled hidden>topic</option>
+                    <option value="php">php</option>
+                    <option value="Java">Java</option>
+                    <option value="C">C</option>
+                </select>
+                <button type="submit" value="postToTimeLine">post to timeline</button>
+            </form>
+        </div>
+
+        <div id="searchByTopic">
+            <form action="" method="POST" id="topicSearchForm">
+                <span>Search by topic</span>
+                <select name="topic">
+                    <option value="" selected disabled hidden>topic</option>
+                    <option value="php">php</option>
+                    <option value="Java">Java</option>
+                    <option value="C">C</option>
+                </select>
+                <button type="submit" value="topicSearchSubmitBtn">go -></button>
+            </form>
+        </div>
+
+        <div id="latestDicussions">
+            <h2>Latest discussions</h2>
+            <!-- for each post -->
+            <div class="post">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="./img/vector-knowledge.jpg" class="profilePic" alt="profile picture">
+                        </td>
+                        <td>
+                            <span>User settings deleted</span> <span>nodejs</span>
+                            <p>After I logged into my node app, I saw that the settings were deleted after I restarted
+                                my server. I had installed nodemon the it stared...</p>
+                            <span id="postDate">25 Oct 2019</span> <a href="" class="replyHref">5 replies</a>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            
+
+        </div>
+        <a href="">Next -></a>
+
+        
+    </div>
+</body>
+
+</html>

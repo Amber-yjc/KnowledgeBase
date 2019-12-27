@@ -1,0 +1,31 @@
+{{> nav}}
+
+<div class="leftDivProfile">
+    {{> profilecard userinfo=userinfo}}
+</div>
+
+<div class="rightDivProfile">
+
+    {{#with userinfo}}
+    <div class="postDiv" id='edit-profile-form'>
+        <h1>Edit Profile</h1>
+        <form action="/user/edit-profile" method="POST">
+            <input class="sideBySideInput" type="text" name="firstname" placeholder="First Name"
+                value="{{firstname}}" />
+            <input class="sideBySideInput" type="text" name="lastname" placeholder="Last Name" value="{{lastname}}" />
+            <br />
+            <input class="oneLineInput" type="text" name="img_url" placeholder="Avatar URL" value="{{img_url}}" />
+            <br />
+            <textarea id="registrationTextArea" rows="10" name="description"
+                placeholder="A few lines about yourself...">{{description}}</textarea>
+            <br />
+            <input class="oneLineInput" type="text" name="country" placeholder="Country" value="{{country}}" /> <br />
+            <label>Date of Birth</label>
+            <input class="oneLineInput" type="date" name="birth_date" value="{{birth_date}}" /><br />
+            <button class="signupBtn">Update Profile</button>
+        </form>
+    </div>
+    {{/with}}
+
+    <script src="/js/homepage.js"></script>
+</div>

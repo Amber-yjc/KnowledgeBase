@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href='login.css' rel='stylesheet' />
+
+</head>
+
+<body>
+    <div class="navBar">
+        <span>k<span class="blueFont">b</span></span>
+        <input type="text" id="searchInput" placeholder="&#x1F50D;Search..">
+        <button type="button" id="logoutBtn" onclick="">logout</button>
+    </div>
+    <div class="profileDiv">
+        <div class="profileTop">
+            <table>
+                <tr>
+                    <td>
+                        <img src="./img/vector-knowledge.jpg" alt="profile picture">
+                    </td>
+                    <td>
+                        <button type="button" id="messageBtn" onclick="">Message</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>Kevin Hudson</h1>
+                        <h2>Team lead | Part time singer | Full time dad</h2>
+                        <h3>Canada</h3>
+                    </td>
+                    <td>
+                        <div class="likesPost">
+                            <span class="blueFont">5 Likes</span> <button type="button" id="likeBtn"
+                                onclick="">+</button><br />
+                            <span class="blueFont">2 Posts</span>
+
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <dv class="profileButtom">
+            <h2>Latest discussions</h2>
+            <!-- for each post -->
+            <div class="post">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="./img/vector-knowledge.jpg" class="profilePic" alt="profile picture">
+                        </td>
+                        <td>
+                            <span>User settings deleted</span> <span>nodejs</span>
+                            <p>After I logged into my node app, I saw that the settings were deleted after I restarted
+                                my server. I had installed nodemon the it stared...</p>
+                            <span id="postDate">25 Oct 2019</span> <a href="" class="replyHref">5 replies</a>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+        </dv>
+
+    </div>
+</body>
+
+</html>

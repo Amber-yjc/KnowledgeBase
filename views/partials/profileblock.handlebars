@@ -1,0 +1,43 @@
+{{#with userinfo}}
+<table>
+    <tr>
+        <td>
+            <a href="/user/profile?userid={{id}}">
+                <img src="{{img_url}}" alt="profile picture" onerror="this.src='/img/default.png'">
+            </a>
+        </td>
+        <td>
+            {{#unless (equals id currentUserId)}}
+            <button type="button" id="messageBtn"><a href="/message?userId={{id}}" class="msgHref">Message</a></button>
+            {{/unless}}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h1 class="fontWeightNormal" id="username-bold">{{firstname}} {{lastname}}</h1>
+            <h2 class="fontWeightNormal">{{description}}</h2>
+            <h3 class="fontWeightNormal">{{country}}</h3>
+        </td>
+        <td>
+            <div class="likesPost">
+                <span class="blueFont">{{like_count}} Likes</span>
+
+                <form action="/user/like" method="POST" style="display: inline">
+                    <input name="toUser" value="{{id}}" style="display: none" />
+                    {{#unless (equals id currentUserId)}}
+                    <button type="submit" id="likeBtn">
+                        {{#if liked}}
+                        -
+                        {{else}}
+                        +
+                        {{/if}}
+                    </button>
+                    {{/unless}}
+                    <br />
+                </form>
+                <span class="blueFont">{{post_count}} Posts</span>
+            </div>
+        </td>
+    </tr>
+</table>
+{{/with}}

@@ -1,0 +1,27 @@
+{{#with userinfo}}
+<a href="/user/profile?userid={{id}}">
+<img src="{{img_url}}" class="profilePic" alt="profile picture" onerror="this.src='/img/default.png'">
+</a>
+<h1>{{firstname}} {{lastname}}</h1>
+<p>{{description}}</p>
+<table id="PostMessageLikeTable">
+    <tr>
+        <td><a href="/post/all">Posts</a></td>
+        <td>{{post_count}}</td>
+    </tr>
+    <tr>
+        <td><a href="/message/chat">Messages</a></td>
+        <td>{{message_count}}</td>
+    </tr>
+    <tr>
+        <td>Likes</td>
+        <td>{{like_count}}</td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/user/edit-profile">Edit Profile</a>
+        </td>
+        <td></td>
+    </tr>
+</table>
+{{/with}}

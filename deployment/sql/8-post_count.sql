@@ -1,0 +1,2 @@
+ALTER TABLE user
+ADD COLUMN `post_count` INT NOT NULL DEFAULT 0 AFTER `birth_date`;

@@ -1,0 +1,10 @@
+{{> nav}}
+<div class="leftDivProfile">
+    {{> profilecard userinfo=userinfo}}
+</div>
+<div class="rightDivProfile">
+    <div id="latestDicussions">
+        <h2>All Posts</h2>
+        {{> posts posts=posts}}
+    </div>
+</div>

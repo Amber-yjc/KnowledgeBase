@@ -1,0 +1,68 @@
+/*************************************** profile *******************************/
+.profileDiv{
+    padding: 5%;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    /* background-color: deeppink; */
+}
+
+
+div.profileTop img{
+    border-radius: 50%;
+    width:200px;
+    height: 200px;
+}
+
+div.profileTop td:nth-child(1){
+    /* background-color: lightgreen; */
+    width: 80vh;
+}
+
+div.profileTop td:nth-child(2){
+    /* background-color: darkorchid; */
+    width: 30%;
+    position: relative;
+}
+
+#messageBtn{
+    position: absolute;
+    left: 5px;
+    bottom: 5px;     
+    padding: 10px;
+    font-size: large;
+    background-color: rgb(77, 158, 235);
+    color: white;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+
+}
+
+
+
+
+.likesPost{
+    font-size: large;
+    font-weight: bold;
+    left: 20px;
+    top: 20px;  
+    position: absolute;
+    /* background-color: hotpink; */
+    padding: 5px;
+}
+
+
+#likeBtn{
+    border-radius: 50%;   
+    padding: 5px;
+    font-size: medium;
+    font-weight: bold;    
+    width: 30px;
+    height: 30px;
+    background-color: rgb(77, 158, 235);
+    color: white;
+    text-decoration: none;
+    border: none;
+
+}

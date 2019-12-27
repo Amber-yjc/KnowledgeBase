@@ -1,0 +1,50 @@
+{{> nav}}
+
+<!-- main post -->
+<div class="mainPost">
+    <div class="post">
+        <table>
+            <tr>
+                <td>
+                    <a href="/user/profile?userid={{id}}">
+                        <img src="{{avatar_url}}" class="profilePic" alt="profile picture" onerror="this.src='/img/default.png'">
+                    </a>
+                </td>
+                <td>
+                    <span id="subject-text">{{subject}}</span> <span>{{topic}}</span>
+                    <p>{{text}}</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+<!-- replies -->
+<div class="replyPost">
+    {{#each replies}}
+    <div class="post">
+        <table>
+            <tr>
+                <td>
+                    <a href="/user/profile?userid={{id}}">
+                        <img src="{{this.avatar_url}}" class="profilePic" alt="profile picture" onerror="this.src='/img/default.png'">
+                    </a>
+                </td>
+                <td>
+                    <p>{{this.text}}</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    {{/each}}
+
+    <!-- end of for each reply -->
+    <form action="/post/replyto" method="POST" id="replyForm">
+        <input name='post_id' value={{post_id}} style="display: none" />
+        <textarea form="replyForm" rows="3" type="text" name="text" placeholder="add your reply..."></textarea><br />
+        <button type="submit" value="addReply">comment</button>
+    </form>
+
+
+</div>

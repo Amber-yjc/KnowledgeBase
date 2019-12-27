@@ -1,0 +1,48 @@
+{{> nav}}
+
+<div class="leftDivProfile">
+    {{> profilecard userinfo=userinfo}}
+</div>
+
+<div class="rightDivProfile">
+    <div id="postToTimeLine">
+        <h1>What is your question today?</h1>
+        <input class="oneLineInput" type="text" name="subject" placeholder="subject" /> <br />
+        <textarea form="homePageForm" rows="5" type="text" name="text"
+            placeholder="explain in detail..."></textarea><br />
+        <select name="topic_id">
+            <option value="" selected disabled hidden>topic</option>
+            {{#each topics}}
+            <option value={{@index}}>{{this}}</option>
+            {{/each}}
+        </select>
+        <button type="submit" value="postToTimeLine" onclick="postToTimeline()">post to timeline</button>
+    </div>
+
+    <div id="searchByTopic">
+        <form action="/user/homepage" method="GET" id="topicSearchForm">
+            <span>Search by topic</span>
+            <select name="topic">
+                <option value="" selected disabled hidden>topic</option>
+                {{#each topics}}
+                <option value={{@index}}>{{this}}</option>
+                {{/each}}
+            </select>
+            <button type="submit" value="topicSearchSubmitBtn">go -></button>
+        </form>
+    </div>
+
+    <div id="latestDicussions">
+        <h2>Latest discussions</h2>
+        {{> posts posts=posts}}
+    </div>
+
+    {{#if nextPage}}
+        <a href="/user/homepage?page={{nextPage}}">Next</a>
+    {{/if}}
+    {{#if prevPage}}
+        <a href="/user/homepage?page={{prevPage}}">Previous</a>
+    {{/if}}
+
+    <script src="/js/homepage.js"></script>
+</div>

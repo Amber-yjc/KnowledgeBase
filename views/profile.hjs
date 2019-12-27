@@ -1,0 +1,13 @@
+{{> nav}}
+
+<div class="profileDiv">
+    <div class="profileTop">
+        {{> profileblock userinfo=userinfo}}
+    </div>
+
+    <div class="profileButtom">
+        <h2>Latest discussions</h2>
+        {{> posts posts=posts}}
+    </div>
+
+</div>
